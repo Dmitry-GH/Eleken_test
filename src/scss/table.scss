@@ -18,6 +18,7 @@
                 &:last-child{
                     padding-right: 0;
                     border-left: 1px solid $grey;
+                    opacity: 0.5;
                 }
             }
         }
@@ -50,17 +51,21 @@
         display: flex;
         font-size: 14px;
         align-items: center;
+
+        &__block{
+            display: flex;
+            align-items: center;
+        }
+
+        &__card_view{
+            display: none;
+        }
     }
 
     .company_block{
         padding: 8px 0;
         
-        &_name{
-            font-size: 14px;
-        }
-        &_rating{
-            letter-spacing: -0.15em;
-        }
+        
     }
 
     &_buttons{
@@ -92,6 +97,15 @@
         &_img{
             width: 40px;
             margin: 0 20px 0 0;
+            img{
+                width: 100%;
+            }
+        }
+        &_name{
+            font-size: 14px;
+        }
+        &_rating{
+            letter-spacing: -0.15em;
         }
     }
     .covering{
