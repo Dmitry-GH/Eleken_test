@@ -1,0 +1,66 @@
+$bg_color: #fff;
+$font: 'Open Sans', sans-serif;
+$text: #1C1B1A;
+$blue: #2985F7;
+$grey: rgba(28, 27, 26, 0.1);
+
+body{
+    background: $bg_color;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    color: $text;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.metal{
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    margin: 5px;
+
+    &_platinum{
+        background: #808080;
+    }
+    &_silver{
+        background: #98B1B5;
+    }
+    &_gold{
+        background: #E79124;
+    }
+    &_bronze{
+        background: #963C11;
+    }
+    &_catastrophic{
+        background: #CA1D25;
+    }
+}
+
+.question{
+    background: #E4F0FF;
+    color: $blue;
+    font-weight: 600;
+    font-size: 11px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+
+    cursor: pointer;
+}
+
+
+

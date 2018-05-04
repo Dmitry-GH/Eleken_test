@@ -1,0 +1,118 @@
+.table{
+    &_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $grey;
+
+
+        &_block{
+            display: flex;
+            font-size: 24px;
+            &-icon{
+                padding: 0 15px;
+                cursor: pointer;
+
+                &:last-child{
+                    padding-right: 0;
+                    border-left: 1px solid $grey;
+                }
+            }
+        }
+    }
+
+    &_subheader{
+        justify-content: flex-start;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        opacity: 0.4;
+        display: flex;
+        align-items: flex-start;
+        padding: 31px 0 0 0;
+
+        .table_col{
+            font-size: 10px;
+        }
+    }
+
+    &_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 0;
+        border-bottom: 1px solid $grey;
+    }
+
+    &_col{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .company_block{
+        padding: 8px 0;
+        
+        &_name{
+            font-size: 14px;
+        }
+        &_rating{
+            letter-spacing: -0.15em;
+        }
+    }
+
+    &_buttons{
+        button{
+            background: $bg_color;
+            border: 1px solid rgba(28, 27, 26, 0.1);
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 8px 26px;
+            cursor: pointer;
+            color: $blue;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 10px;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            &.invert{
+                padding: 8px 22px;
+                background: $blue;
+                color: $bg_color;
+            }
+        }
+    }
+
+    .company{
+        flex-basis: 180px;
+
+        &_img{
+            width: 40px;
+            margin: 0 20px 0 0;
+        }
+    }
+    .covering{
+        flex-basis: 114px;
+    }
+    .type{
+        flex-basis: 105px;
+    }
+    .metal_level{
+        flex-basis: 175px;
+    }
+    .drugs{
+        flex-basis: 88px;
+    }
+    .primary_care_visits{
+        flex-basis: 117px;
+    }
+    .yearly_deductible{
+        flex-basis: 118px;
+    }
+    .price{
+        flex-basis: 120px;
+    }
+}

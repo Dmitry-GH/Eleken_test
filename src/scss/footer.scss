@@ -1,0 +1,40 @@
+footer{
+    background: $bg_color;
+    border-top: 1px solid rgba(28, 27, 26, 0.1);
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 85px;
+    
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        height: 70px;
+    }
+
+    .footer{
+        &_copy{
+            align-self: center;
+            font-size: 12px;
+            opacity: 0.7;
+            margin-right: 10px;
+        }
+        &_links{
+            display: flex;
+            align-self: center;
+        }
+        &_link{
+            margin: 25px 1px 0px 10px;
+            padding: 0px 10px 23px 10px;
+            
+            font-size: 12px;
+            text-align: center;
+            opacity: 0.7;
+
+            cursor: pointer;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
